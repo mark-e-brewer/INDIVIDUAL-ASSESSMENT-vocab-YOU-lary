@@ -22,4 +22,20 @@ const getTerms = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-export default getTerms;
+const createTerm = (payload) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/term.json`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(payload),
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
+export {
+  getTerms,
+  createTerm,
+};
