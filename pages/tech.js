@@ -9,7 +9,7 @@ const emptyTech = () => {
 const showTech = (array) => {
   clearDOM();
 
-  const btnString = '<button class="addTech" id="add-tech">Add a Tech</button>';
+  const btnString = '<button class="formBtn" id="add-tech">Add a Tech</button>';
   renderToDOM('#add-button', btnString);
 
   let domString = '';
