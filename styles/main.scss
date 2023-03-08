@@ -37,3 +37,29 @@ body {
   width: 300px;
   margin: 5px;
 }
+
+#signin-page {
+  color: white;
+}
+
+#welcome-text {
+  color: white;
+}
+
+.loginBtn {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  padding: 6px;
+  font-weight: 400;
+}
+
+.formBtn {
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px;
+  font-weight: 400;
+  width: 100px;
+}
