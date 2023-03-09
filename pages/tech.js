@@ -14,13 +14,16 @@ const showTech = (array) => {
 
   let domString = '';
   array.forEach((item) => {
-    domString += `<div class="card" style="width: 19rem;" id="tech-card">
-    <div class="card-body">
-      <h5 class="card-title">${item.title}</h5>
+    domString += `<div class="card" style="height: 400px;" id="tech-card">
+    <div class="card-body" style="height: 300px;">
+      <h5 class="card-title" id="techTitle">${item.title}</h5>
+      <hr>
       <h6 class="card-subtitle mb-2 text-muted">Tech</h6>
       <p class="card-text">${item.definition}</p>
-      <a class="card-link btn" id="edit-term-btn--${item.firebaseKey}">Edit</a>
-      <a class="card-link btn" id="delete-term-btn--${item.firebaseKey}">Delete</a>
+      <div id="tech-card-btns">
+       <a class="card-link btn techEdit" id="edit-term-btn--${item.firebaseKey}">Edit</a>
+       <a class="card-link btn techDelete" id="delete-term-btn--${item.firebaseKey}">Delete</a>
+      </div>
     </div>
   </div>`;
   });

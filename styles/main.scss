@@ -7,9 +7,6 @@ body {
   text-align: center;
   margin-top: 100px;
 }
- #logout-nav {
-  justify-content: right;
- }
 
 .logout-btn {
   border: none;
@@ -32,12 +29,27 @@ body {
   margin: auto;
   justify-content: center;
 }
-
+// card css bellow
 .card {
   width: 300px;
-  margin: 5px;
+  margin: 3px;
+  margin-top: 12px;
 }
 
+#termTitle {
+  padding-top: 0px;
+  margin-top: -4px;
+  padding-bottom: -3px;
+  margin-bottom: -5px;
+ }
+
+ #techTitle {
+  padding-top: 0px;
+  margin-top: -4px;
+  padding-bottom: -3px;
+  margin-bottom: -5px;
+ }
+// sign in page bellow
 #signin-page {
   color: white;
 }
@@ -45,7 +57,7 @@ body {
 #welcome-text {
   color: white;
 }
-
+// loggin button
 .loginBtn {
   background-color: white;
   color: black;
@@ -57,11 +69,9 @@ body {
 }
 
 .loginBtn:hover {
-  background-color: #bfbfbf;
   width: 140px;
-  transition: 0.4s ease-in-out;
 }
-
+// add form buttons bellow
 .formBtn {
   background-color: white;
   border: none;
@@ -72,7 +82,113 @@ body {
 }
 
 .formBtn:hover {
-  background-color: #bfbfbf;
-  width: 107px;
-  transition: 0.2s ease-in-out;
+  width: 110px;
+  transition: 0.2s;
 }
+ // card buttons bellow
+.techEdit {
+  border: solid white 1px;
+}
+
+.techEdit:hover {
+  border: solid black 1px;
+  transition: 0.2s;
+}
+
+.techDelete {
+  border: solid white 1px;
+}
+
+.techDelete:hover {
+  border: solid black 1px;
+  transition: 0.2s;
+}
+
+.termEdit {
+  border: solid white 1px;
+}
+
+.termEdit:hover {
+  border: solid black 1px;
+  transition: 0.2s;
+}
+
+.termDelete {
+  border: solid white 1px;
+}
+
+.termDelete:hover {
+  border: solid black 1px;
+  transition: 0.2s;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+ #term-card-btns {
+  margin-top: auto;
+ }
+
+ #tech-card-btns {
+  margin-top: auto;
+ }
+// form css below
+
+.formDesc {
+  height: 180px;
+}
+
+// div from oddmBuilder
+#form-container {
+  margin: auto;
+  justify-content: center;
+  color: white;
+}
+
+// on form elements
+ .formBar {
+  border: none;
+  width: 500px;
+  max-width: 800px;
+ }
+
+ .titleBar {
+  margin-bottom: -10px;
+ }
+
+ .descBar {
+  margin-bottom: 0px;
+ }
+
+ ::placeholder {
+  text-align: center;
+ }
+
+ .formSubmit {
+  border: none;
+  border-radius: 4px;
+  color: black;
+  background-color: white;
+  height: 33px;
+  width: 70px;
+  margin-top: 10px;
+ }
+
+ .formSubmit:hover {
+  width: 80px;
+  transition: 0.2s;
+ }
+
+ input {
+  padding: 6px;
+  margin-bottom: -5px;
+  border-radius: 4px;
+  border-radius: none;
+ }
+
+ textarea {
+  border-radius: 4px;
+  resize: none;
+ }

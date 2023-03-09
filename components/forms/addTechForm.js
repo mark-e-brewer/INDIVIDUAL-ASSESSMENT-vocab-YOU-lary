@@ -1,20 +1,20 @@
 import clearDOM from '../../utils/clearDOM';
 import renderToDOM from '../../utils/renderToDOM';
 
-const addTechForm = () => {
+const addTechForm = (obj = {}) => {
   clearDOM();
   document.querySelector('#add-button').innerHTML = '';
   const domString = `
-<form>
-  <div class="input-group">
-    <input type="text" id="name" required>
-    <label for="title">Technology Name</label>
+<form class="addForm termForm" id="${obj.firebaseKey ? `update-tech--${obj.firebaseKey}` : 'submit-tech'}">
+  <div class="form-group">
+    <input class="formBar titleBar" type="text" id="tech-title" placeholder="Technology" value="${obj.title || ''}"  required>
+    <label for="title"></label>
   </div>
-  <div class="input-group">
-   <input type="text" id="name" required>
-   <label for="description">Description</label>
+  <div class="form-group formDesc">
+    <label for="description"></label>
+    <textarea class="formBar descBar form-control" type="text" id="tech-form-description" placeholder="Description" style="height: 150px" required>${obj.definition || ''}</textarea>
   </div>
-  <button type="submit" id="tech-submit-btn">SUBMIT</button>
+  <button class="formSubmit" type="submit" id="tech-submit-btn">SUBMIT</button>
 </form>`;
 
   renderToDOM('#form-container', domString);
