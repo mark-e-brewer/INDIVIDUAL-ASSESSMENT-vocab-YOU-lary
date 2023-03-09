@@ -13,10 +13,8 @@ const getTerms = (uid) => new Promise((resolve, reject) => {
     .then((data) => {
       if (data) {
         resolve(Object.values(data));
-        console.warn(Object.values(data));
       } else {
         resolve([data]);
-        console.warn(Object.values(data));
       }
     })
     .catch(reject);
@@ -35,7 +33,21 @@ const createTerm = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const updateTerm = (payload) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/term/${payload.firebaseKey}.json`, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(payload),
+  })
+    .then((response) => response.json())
+    .then(resolve)
+    .catch(reject);
+});
+
 export {
   getTerms,
   createTerm,
+  updateTerm,
 };
