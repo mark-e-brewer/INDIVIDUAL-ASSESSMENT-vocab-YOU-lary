@@ -20,6 +20,18 @@ const getTech = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const getSingleTech = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/tech/${firebaseKey}.json`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data)) // will resolve a single object
+    .catch(reject);
+});
+
 const createTech = (payload) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/tech.json`, {
     method: 'POST',
@@ -48,6 +60,7 @@ const updateTech = (payload) => new Promise((resolve, reject) => {
 
 export {
   getTech,
+  getSingleTech,
   createTech,
   updateTech,
 };

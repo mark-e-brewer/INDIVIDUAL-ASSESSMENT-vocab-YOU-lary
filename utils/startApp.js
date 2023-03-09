@@ -3,6 +3,7 @@ import navBar from '../components/shared/navBar';
 import navigationEvents from '../events/navEvents';
 import signinPage from '../pages/signinPage';
 import domEvents from '../events/domEvents';
+import formEvents from '../events/formEvents';
 
 const startApp = (user) => {
   DomBuilder();
@@ -10,6 +11,7 @@ const startApp = (user) => {
   navigationEvents(user);
   signinPage();
   domEvents();
+  formEvents(user);
 };
 
 export default startApp;
