@@ -8,9 +8,8 @@ const emptyTerms = () => {
 
 const showTerms = (array) => {
   clearDOM();
-  console.warn('show terms working');
 
-  const btnString = '<button class="formBtn" id="add-term">Add a Term</button>';
+  const btnString = '<button class="formBtn" id="add-term-btn">Add a Term</button>';
   renderToDOM('#add-button', btnString);
 
   let domString = '';
