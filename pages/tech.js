@@ -21,8 +21,8 @@ const showTech = (array) => {
       <h6 class="card-subtitle mb-2 text-muted">Tech</h6>
       <p class="card-text">${item.definition}</p>
       <div id="tech-card-btns">
-       <a class="card-link btn techEdit" id="edit-term-btn--${item.firebaseKey}">Edit</a>
-       <a class="card-link btn techDelete" id="delete-term-btn--${item.firebaseKey}">Delete</a>
+       <a class="card-link btn techEdit" id="edit-tech-btn--${item.firebaseKey}">Edit</a>
+       <a class="card-link btn techDelete" id="delete-tech-btn--${item.firebaseKey}">Delete</a>
       </div>
     </div>
   </div>`;
