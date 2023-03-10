@@ -26,7 +26,7 @@ const domEvents = () => {
     if (e.target.id.includes('edit-term-btn')) {
       const [, firebaseKey] = e.target.id.split('--');
 
-      getSingleTerm(firebaseKey).then((termObj) => addTechForm(termObj));
+      getSingleTerm(firebaseKey).then((termObj) => addTermForm(termObj));
     }
   });
 };
