@@ -23,8 +23,8 @@ const formEvents = (user) => {
       });
     }
 
-    if (e.target.id.include('update-tech')) {
-      const [, firebaseKey] = e.target.dispatchEvent.split('--');
+    if (e.target.id.includes('update-tech')) {
+      const [, firebaseKey] = e.target.id.split('--');
       const payload = {
         title: document.querySelector('#tech-title').value,
         definition: document.querySelector('#tech-form-description').value,
@@ -51,8 +51,8 @@ const formEvents = (user) => {
       });
     }
 
-    if (e.target.id.include('update-term')) {
-      const [, firebaseKey] = e.target.dispatchEvent.split('--');
+    if (e.target.id.includes('update-term')) {
+      const [, firebaseKey] = e.target.id.split('--');
       const payload = {
         title: document.querySelector('#term-title').value,
         definition: document.querySelector('#term-form-description').value,

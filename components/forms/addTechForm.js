@@ -5,7 +5,7 @@ const addTechForm = (obj = {}) => {
   clearDOM();
   document.querySelector('#add-button').innerHTML = '';
   const domString = `
-<form class="addForm termForm" id="${obj.firebaseKey ? `update-tech--${obj.firebaseKey}` : 'submit-tech'}">
+<form class="addForm techForm" id="${obj.firebaseKey ? `update-tech--${obj.firebaseKey}` : 'submit-tech'}">
   <div class="form-group">
     <input class="formBar titleBar" type="text" id="tech-title" placeholder="Technology" value="${obj.title || ''}"  required>
     <label for="title"></label>
