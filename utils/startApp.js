@@ -10,7 +10,7 @@ const startApp = (user) => {
   navBar();
   navigationEvents(user);
   signinPage();
-  domEvents();
+  domEvents(user);
   formEvents(user);
 };
 
