@@ -22,7 +22,7 @@ const showTerms = (array) => {
       <p class="card-text">${item.definition}</p>
       <div id="term-card-btns">
        <a type="button" class="card-link btn termEdit" id="edit-term-btn--${item.firebaseKey}">Edit</a>
-       <a type="button" class="card-link btn techDelete" id="delete-term-btn--${item.firebaseKey}">Delete</a>
+       <a type="button" class="card-link btn termDelete" id="delete-term-btn--${item.firebaseKey}">Delete</a>
       </div>
     </div>
   </div>`;
