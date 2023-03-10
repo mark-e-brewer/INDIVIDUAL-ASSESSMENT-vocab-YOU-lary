@@ -11,6 +11,7 @@ const formEvents = (user) => {
       const payload = {
         title: document.querySelector('#tech-title').value,
         definition: document.querySelector('#tech-form-description').value,
+        time: Date.now(),
         uid: user.uid,
       };
 
@@ -39,6 +40,7 @@ const formEvents = (user) => {
       const payload = {
         title: document.querySelector('#term-title').value,
         definition: document.querySelector('#term-form-description').value,
+        time: Date.now(),
         uid: user.uid,
       };
 

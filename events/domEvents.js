@@ -20,6 +20,7 @@ const domEvents = (user) => {
     }
 
     if (e.target.id.includes('edit-tech-btn')) {
+      console.warn(Date.now());
       const [, firebaseKey] = e.target.id.split('--');
 
       getSingleTech(firebaseKey).then((techObj) => addTechForm(techObj));
