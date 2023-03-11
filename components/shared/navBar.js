@@ -16,15 +16,9 @@ const navBar = () => {
           <a class="nav-link" href="#" id="nav-tech">Tech</a>
         </li>
         <div id="filter-btn"></div>
-        <li class="nav-item">
-          <a class="nav-link" id="newest-btn"></a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link" id="oldest-btn"></a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link" id="alpha-btn"></a>
-        </li>
+        <div id="newest-btn"></div>
+        <div id="oldest-btn"></div>
+        <div id="alpha-btn"></div>
       </ul>
       <span class="navbar-text" id="logout-span">
             <div id="cart-button"></div>
@@ -38,3 +32,13 @@ const navBar = () => {
 };
 
 export default navBar;
+
+// <li class="nav-item">
+// <a class="nav-link" id="newest-btn"></a>
+// </li>
+// <li class="nav-item">
+// <a class="nav-link" id="oldest-btn"></a>
+// </li>
+// <li class="nav-item">
+// <a class="nav-link" id="alpha-btn"></a>
+// </li>

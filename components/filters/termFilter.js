@@ -5,4 +5,16 @@ const termFilterBtn = () => {
   renderToDOM('#filter-btn', domString);
 };
 
-export default termFilterBtn;
+const termFilterOptions = () => {
+  const domStrNew = '<li class="nav-item"><a class="nav-link nav-termF" href="#" id="term-filter-newest">Newest</a></li>';
+  const domStrOld = '<li class="nav-item"><a class="nav-link nav-termF" href="#" id="term-filter-oldest">Oldest</a></li>';
+  const domStrAlpha = '<li class="nav-item"><a class="nav-link nav-termF" href="#" id="term-filter-alpha">Alphabetical</a></li>';
+  renderToDOM('#newest-btn', domStrNew);
+  renderToDOM('#oldest-btn', domStrOld);
+  renderToDOM('#alpha-btn', domStrAlpha);
+};
+
+export {
+  termFilterBtn,
+  termFilterOptions,
+};

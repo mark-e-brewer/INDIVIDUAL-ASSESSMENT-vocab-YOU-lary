@@ -2,8 +2,8 @@ import { showTerms, emptyTerms } from '../pages/terms';
 import { showTech, emptyTech } from '../pages/tech';
 import { getTerms } from '../api/termData';
 import { getTech } from '../api/techData';
-import techFilterBtn from '../components/filters/techFilter';
-import termFilterBtn from '../components/filters/termFilter';
+import { techFilterBtn, techFilterOptions } from '../components/filters/techFilter';
+import { termFilterBtn, termFilterOptions } from '../components/filters/termFilter';
 import clearFilter from '../utils/clearFilter';
 
 const navigationEvents = (user) => {
@@ -40,9 +40,11 @@ const navigationEvents = (user) => {
 const filterEvents = () => {
   document.querySelector('#navigation').addEventListener('click', (e) => {
     if (e.target.id.includes('term-filter')) {
-      document.querySelectorAll('#newest-btn').innerHTML = 'Newest';
-      document.querySelectorAll('#oldest-btn').innerHTML = 'Oldest';
-      document.querySelectorAll('#alpha-btn').innerHTML = 'Alphabetical';
+      termFilterOptions();
+    }
+
+    if (e.target.id.includes('tech-filter')) {
+      techFilterOptions();
     }
   });
 };
@@ -51,3 +53,5 @@ export {
   navigationEvents,
   filterEvents,
 };
+
+// termFs.classList.toggle('animateF');
