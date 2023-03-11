@@ -16,6 +16,7 @@ VocabYOUalry is a webapp aimed at helping junior developers solidify there knowl
 - can create their own vocabulary cards with an easy to use form
 - can edit their vocab cards easilt.
 - can delete vocab cards if needed.
+- cards can be filtered by Newst, Oldest and Alphabetical order
 
 ## Relevant links:
 - [wireframe for app] (https://www.figma.com/file/NWDmGFT5ExQ7o56RVfw83c/Untitled?node-id=0%3A1&t=ometC3QLfIVdDoz1-0)
@@ -42,8 +43,9 @@ VocabYOUalry is a webapp aimed at helping junior developers solidify there knowl
 <img width="400" alt="Landing page" src="https://i.ibb.co/3sphYNv/Screenshot-20230310-071409.png">
 - After sign in users see landing page and navbar apears. If you screen size is small the navbar will have a dropdown button with all navbar options.
 
-<img width="400" alt="Termonology vocab card page" src="https://i.ibb.co/bK1qV5k/Screenshot-20230310-071420.png">
+<img width="400" alt="Termonology vocab card page" src="https://i.ibb.co/dWhMcc6/Screenshot-20230311-100659.png">
 - Add, Edit or Delete vocab cards.
+- Filter by Newest, Oldest and Alphabetical.
 
 <img width="400" alt="Termonology add/edit form" src="https://i.ibb.co/zhwznwQ/Screenshot-20230310-071435.png">
 - If edit is clicked on a card the fields will automaticly fill out with the cards current title and description.
