@@ -8,20 +8,27 @@ const navBar = () => {
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" href="#" id="nav-terms">Terms</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" id="nav-tech">Tech</a>
         </li>
+        <div id="filter-btn"></div>
         <li class="nav-item">
-        <a class="nav-link" href="#" id="google-auth">Signout</a>
-      </li>
+          <a class="nav-link" id="newest-btn"></a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" id="oldest-btn"></a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" id="alpha-btn"></a>
+        </li>
       </ul>
-      <span class="navbar-text">
+      <span class="navbar-text" id="logout-span">
             <div id="cart-button"></div>
-            <div id="logout-nav"></div>
+            <div id="logout-button"></div>
           </span>
     </div>
   </div>
