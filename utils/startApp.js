@@ -12,7 +12,7 @@ const startApp = (user) => {
   signinPage();
   domEvents(user);
   formEvents(user);
-  filterEvents();
+  filterEvents(user);
 };
 
 export default startApp;

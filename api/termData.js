@@ -14,7 +14,7 @@ const getTerms = (uid) => new Promise((resolve, reject) => {
       if (data) {
         resolve(Object.values(data));
       } else {
-        resolve([data]);
+        resolve([]);
       }
     })
     .catch(reject);
