@@ -75,6 +75,16 @@ body {
 .logout-btn {
   background-color: rgba(0,0,0,.001);
 }
+
+ //searchbar 
+ #search {
+  display: flex;
+  padding: 6px 10px;
+  display: inline-block;
+  max-width: 400px;
+  margin: 10px;
+ }
+
 // add form buttons bellow
 .formBtn {
   background-color: white;

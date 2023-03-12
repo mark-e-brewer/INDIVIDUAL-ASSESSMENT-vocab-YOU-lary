@@ -2,7 +2,7 @@ import renderToDOM from '../../utils/renderToDOM';
 
 const navBar = () => {
   const domString = `<nav class="navbar fixed-top navbar-expand-lg bg-light">
-  <div class="container-fluid">
+  <div class="container-fluid ">
     <a class="navbar-brand" href="#">VocabYOUlary</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -20,8 +20,9 @@ const navBar = () => {
         <div id="oldest-btn"></div>
         <div id="alpha-btn"></div>
       </ul>
-      <span class="navbar-text" id="logout-span">
-            <div id="cart-button"></div>
+        <input class="form-control" id="search" placeholder="Search Cards">
+      <span></span>
+      <span class="navbar-text" id="logout-span" aria-label="Search"/>
             <div id="logout-button"></div>
           </span>
     </div>
