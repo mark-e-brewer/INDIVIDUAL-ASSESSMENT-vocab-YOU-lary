@@ -77,12 +77,22 @@ body {
 }
 
  //searchbar 
- #search {
+ #tech-search {
   display: flex;
   padding: 6px 10px;
-  display: inline-block;
-  max-width: 400px;
+  width: 325px;
   margin: 10px;
+ }
+
+ #term-search {
+  display: flex;
+  padding: 6px 10px;
+  width: 325px;
+  margin: 10px;
+ }
+
+ #search-span {
+  margin-right: 13px;
  }
 
 // add form buttons bellow

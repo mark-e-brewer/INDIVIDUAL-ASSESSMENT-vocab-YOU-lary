@@ -20,8 +20,9 @@ const navBar = () => {
         <div id="oldest-btn"></div>
         <div id="alpha-btn"></div>
       </ul>
-        <input class="form-control" id="search" placeholder="Search Cards">
-      <span></span>
+      <span id="search-span">
+        
+      </span>
       <span class="navbar-text" id="logout-span" aria-label="Search"/>
             <div id="logout-button"></div>
           </span>
