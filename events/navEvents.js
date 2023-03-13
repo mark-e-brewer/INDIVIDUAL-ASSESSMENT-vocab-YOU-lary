@@ -5,6 +5,8 @@ import { getTech } from '../api/techData';
 import { techFilterBtn, techFilterOptions } from '../components/filters/techFilter';
 import { termFilterBtn, termFilterOptions } from '../components/filters/termFilter';
 import clearFilter from '../utils/clearFilter';
+import termSearch from '../components/searchBar.js/termSearch';
+import techSearch from '../components/searchBar.js/techSearch';
 
 const navigationEvents = (user) => {
   // LOGOUT BUTTON
@@ -12,10 +14,12 @@ const navigationEvents = (user) => {
   document.querySelector('#nav-terms').addEventListener('click', () => {
     getTerms(user.uid).then((data) => {
       if (data.length === 0) {
+        termSearch();
         termFilterBtn();
         emptyTerms();
         clearFilter();
       } else {
+        termSearch();
         termFilterBtn();
         showTerms(data);
         clearFilter();
@@ -25,16 +29,22 @@ const navigationEvents = (user) => {
   document.querySelector('#nav-tech').addEventListener('click', () => {
     getTech(user.uid).then((data) => {
       if (data.length === 0) {
+        techSearch();
         techFilterBtn();
         emptyTech();
         clearFilter();
       } else {
+        techSearch();
         techFilterBtn();
         showTech(data);
         clearFilter();
       }
     });
   });
+  // document.querySelector('#search').addEventListener('keyup', (e) => {
+  //   const search = e.target.value.toLowerCase();
+  //   get
+  // });
 };
 
 const filterEvents = (user) => {
