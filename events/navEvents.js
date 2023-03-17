@@ -41,10 +41,6 @@ const navigationEvents = (user) => {
       }
     });
   });
-  // document.querySelector('#search').addEventListener('keyup', (e) => {
-  //   const search = e.target.value.toLowerCase();
-  //   get
-  // });
 };
 
 const filterEvents = (user) => {
@@ -100,9 +96,30 @@ const filterEvents = (user) => {
   });
 };
 
+const searchEvents = (user) => {
+  document.querySelector('#navigation').addEventListener('keyup', (e) => {
+    if (e.target.id.includes('tech-search')) {
+      getTech(user.uid).then((data) => {
+        const search = e.target.value.toLowerCase();
+        const res = data.filter((el) => el.title.toLowerCase().includes(search));
+        showTech(res);
+      });
+    }
+
+    if (e.target.id.includes('term-search')) {
+      getTerms(user.uid).then((data) => {
+        const search = e.target.value.toLowerCase();
+        const res = data.filter((el) => el.title.toLowerCase().includes(search));
+        showTerms(res);
+      });
+    }
+  });
+};
+
 export {
   navigationEvents,
   filterEvents,
+  searchEvents,
 };
 
 // const timesArr = [];
